@@ -12,12 +12,20 @@ class Player {
         this.playerElement.style.left = `${this.posX}px`;
         this.playerElement.style.top = `${this.posY}px`;
     };
+    
+    updateCSSpos (x, y) => {
+        return ;
+    }
 
     movePlayer(event) {
-        console.log(event, event.key)
+        const boardWidth = document.querySelector(#game-board).clientWidth;
+        const boardHeight = document.querySelector(#game-board).clientHeight;
+        // console.log(event, event.key)
         if (event.key === "ArrowRight") {
            // console.log("arrowRightPressed", this.playerElement.style.left);
             this.posX += this.speed;
+            if (posX >= boardWidth - this.playerElement.clientWidth)
+                this.playerElement.style.
         }
         else if (event.key === "ArrowLeft") {
             this.posX -= this.speed;

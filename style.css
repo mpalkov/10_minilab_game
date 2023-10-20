@@ -29,3 +29,9 @@ body {
     left: 250px;
     top: 250px;
 }
+
+#score-display {
+    position:relative;
+    top: 50px;
+    left: 50px;
+}
